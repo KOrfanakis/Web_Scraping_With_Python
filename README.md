@@ -61,6 +61,21 @@ Every HTML file must have one grand/root element called \<html>. This element co
 ```  
   
 For more information, please use the links in the References section of the notebook.
+
+## Web Scraping Workflow
+
+The workflow for web scraping with Python can be divided into the following three steps:
+  
+1. **Obtaining the HTML**: Firstly, we need to send an HTTP request to the webpage server that we want to scrape. If the request is successful, the server will respond with the HTML content of the page.
+  
+2. **Parsing the HTML**: Most of the obtained HTML data is nested, making it difficult to extract information using stand string processing techniques. Instead, we need a parser, i.e. an algorithm/program designed to parse the HTML and create a parse/syntax tree of the HTML data.
+  
+3. **Extracting the Data**: Once the syntax tree is created, we need to navigate it and retrieve the information that we are interested in
+
+To complete those steps, we need two two third-party Python libraries:
+1. **[Requests](https://docs.python-requests.org/en/master/)**: a simple but powerful library for sending all kinds of HTTP requests to a web server,
+  
+2. **[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)**: a library for parsing HTML and XML documents. It works with a user-selected parser to provide idiomatic ways of navigating, searching, and modifying the parse tree.
   
 ## References
   
