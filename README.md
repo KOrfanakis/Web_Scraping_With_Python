@@ -1,8 +1,10 @@
 # Web Scraping with Python
 
+<img src="/Images/01-Intro_Image.jpg" alt="drawing"/>
+
 ## Objective
 
-This tutorial aims to show how to use the Python programming language to web scrape a website. Specifically, we will use the `requests` and `Beautiful Soup` libraries to scrape and parse data from [companiesmarketcap.com](https://companiesmarketcap.com/) and retrieve the “*Largest Companies by Market Cap*”.
+The aim of this tutorial is to show how to use the Python programming language to web scrape a website. Specifically, we will use the `requests` and `Beautiful Soup` libraries to scrape and parse data from [companiesmarketcap.com](https://companiesmarketcap.com/) and retrieve the “*Largest Companies by Market Cap*”.
 
 We will learn how to scale the web scraping process by first retrieving the first company/row of the table, all companies of the website’s first page, and finally all 5301 companies from multiple pages. Finally, we will use `matplotlib` to visualise the most important information from the scraped dataset.
 
@@ -77,6 +79,20 @@ To complete those steps, we need two two third-party Python libraries:
   
 2. **[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)**: a library for parsing HTML and XML documents. It works with a user-selected parser to provide idiomatic ways of navigating, searching, and modifying the parse tree.
   
+## Ethics of Scraping
+  
+Web scraping is a powerful tool that should be used responsibly. Below is a list of things to consider before you start scraping data:
+  
+1.	Always check the robots.txt file of the site you are about to scrape, as it contains guidelines on how bots should behave on the website.
+  
+2.	Do not spam the website with multiple requests in a short amount of time, as that may hurt their server(s) and/or may be classified as a DDOS attack. If you need to scrape multiple pages, you can artificially limit the rate of requests, as we will show in the code.
+  
+3.	Do not engage in piracy or other unauthorised commercial use regarding the data you extract.
+
+Additionally, some companies and websites may provide the data we are interested in in a clean and concise way through an API. If a public API that provides the information we are looking for is available, web scarping should be avoided altogether.
+  
+If you would like to know more, I suggest reading James Densmore’s article on the [Ethics in Web Scraping](https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01).
+
 ## References
   
 The complete list of reference for this tutorial is included at the end of the notebook.
