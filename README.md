@@ -20,9 +20,9 @@ Web scraping is a technique employed to extract large amounts of data from the W
 
 ## How Does It Work?
 
-The first step in performing web scraping involves understanding what a webpage is. Simply put, a webpage is a text document provided by a website and displayed to a user in a web browser. Such documents are written in the [HTML language](https://html.com/).
+The first step in performing web scraping involves understanding what a web page is. Simply put, a web page is a text document provided by a website and displayed to a user in a web browser. Such documents are written in the [HTML language](https://html.com/).
 
-HTML (which stands for HyperText Markup Language) is the most fundamental building block of the World Wide Web. It is the underlying source code of all web pages (along with CSS and JavaScript) as it encodes the displayed content and the overall structure of a webpage. HTML documents are files that end with a .html or .htm extension. We can easily access the HTML source code using our browser's ‘view page source’ or ‘inspect’ tools.
+HTML (which stands for HyperText Markup Language) is the most fundamental building block of the World Wide Web. It is the underlying source code of all web pages (along with CSS and JavaScript) as it encodes the displayed content and the overall structure of a web page. HTML documents are files that end with a .html or .htm extension. We can easily access the HTML source code using our browser's ‘view page source’ or ‘inspect’ tools.
 
 Finally, a web scraper is a computer program that can understand an HTML document, parse it and extract useful information. To build a successful web scraper, we need at least a basic knowledge/understanding of HTML. If you are already familiar with HTML, you can skip the following section.
 
@@ -78,7 +78,7 @@ For more information, please use the links in the References section of the note
 
 The workflow for web scraping with Python can be divided into the following three steps:
   
-1. **Obtaining the HTML**: Firstly, we need to send an HTTP request to the webpage server that we want to scrape. If the request is successful, the server will respond with the HTML content of the page.
+1. **Obtaining the HTML**: Firstly, we need to send an HTTP request to the web page server that we want to scrape. If the request is successful, the server will respond with the HTML content of the page.
   
 2. **Parsing the HTML**: Most of the obtained HTML data is nested, making it difficult to extract information using stand string processing techniques. Instead, we need a parser, i.e. an algorithm/program designed to parse the HTML and create a parse/syntax tree of the HTML data.
   
