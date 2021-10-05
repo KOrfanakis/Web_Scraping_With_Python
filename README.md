@@ -8,13 +8,13 @@
 
 This tutorial aims to show how to use the Python programming language to web scrape a website. Specifically, we will use the `requests` and `Beautiful Soup` libraries to scrape and parse data from [companiesmarketcap.com](https://companiesmarketcap.com/) and retrieve the “*Largest Companies by Market Cap*”.
 
-We will learn how to scale the web scraping process by first retrieving the first company/row of the table, all companies on the website’s first page, and finally, all 5391 companies from multiple pages. Finally, we will use `matplotlib` to visualise the most important information from the scraped dataset.
+We will learn how to scale the web scraping process by first retrieving the first company/row of the table, all companies on the website’s first page, and finally, all 5391 companies from multiple pages. Then, we will use `matplotlib` to visualise the most important information from the scraped dataset.
 
 <br>
 
 ## Motivation
 
-Web scraping is a technique employed to extract large amounts of data from the Web using intelligent automation. Web scraping is nowadays an essential tool for data scientists as it can be used to potentially retrieve/source hundreds, millions, or even billions of data points from the Internet’s seemingly endless frontier.
+Web scraping is a technique employed to extract large amounts of data from the Web using intelligent automation. Nowadays, web scraping is an essential tool for data scientists as it can be used to potentially source hundreds, millions, or even billions of data points from the Internet’s seemingly endless frontier.
 
 <br>
 
@@ -80,7 +80,7 @@ The workflow for web scraping with Python can be divided into the following thre
   
 1. **Obtaining the HTML**: Firstly, we need to send an HTTP request to the web page server that we want to scrape. If the request is successful, the server will respond with the HTML content of the page.
   
-2. **Parsing the HTML**: Most of the obtained HTML data is nested, making it difficult to extract information using stand string processing techniques. Instead, we need a parser, i.e. an algorithm/program designed to parse the HTML and create a parse/syntax tree of the HTML data.
+2. **Parsing the HTML**: Most of the obtained HTML data is nested, making it difficult to extract information using stand string processing techniques. Instead, we need a parser, i.e. an algorithm designed to parse the HTML and create a parse/syntax tree of the HTML data.
   
 3. **Extracting the Data**: Once the syntax tree is created, we need to navigate it and retrieve the information that we are interested in
 
