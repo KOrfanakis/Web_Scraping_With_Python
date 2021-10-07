@@ -20,8 +20,6 @@
 
 This tutorial aims to show how to use the Python programming language to web scrape a website. Specifically, we will use the `requests` and `Beautiful Soup` libraries to scrape and parse data from [companiesmarketcap.com](https://companiesmarketcap.com/) and retrieve the “*Largest Companies by Market Cap*”.
 
-We will learn how to scale the web scraping process by first retrieving the first company/row of the table, all companies on the website’s first page, and finally, all 5411 companies from multiple pages. Then, we will use `matplotlib` to visualise the most important information from the scraped dataset.
-
 We will learn how to scale the web scraping process by first retrieving the first company/row of the table, then all companies on the website’s first page, and finally, all 5411 companies from multiple pages. Once the scraping process is complete, we will preprocess the dataset and transform it into a more readable format before using `matplotlib` to visualise the most important information.
 
 <br>
