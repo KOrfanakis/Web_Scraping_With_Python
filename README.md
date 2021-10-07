@@ -2,13 +2,27 @@
 
 <img src="/Images/01-Intro_Image.jpg" alt="drawing"/>
 
+**Table of contents:**
+
+<!--ts-->
+  * [Objective](#objective)
+  * [Motivation](#motivation)
+  * [How Does It Work?](#how-does-it-work)
+  * [HTML (Optional)](#html-optional)
+  * [Web Scraping Workflow](#web-scraping-workflow)
+  * [Ethics of Scraping](#ethics-of-scraping)
+  * [References](#references)
+<!--te-->
+
 <br>
 
 ## Objective
 
 This tutorial aims to show how to use the Python programming language to web scrape a website. Specifically, we will use the `requests` and `Beautiful Soup` libraries to scrape and parse data from [companiesmarketcap.com](https://companiesmarketcap.com/) and retrieve the “*Largest Companies by Market Cap*”.
 
-We will learn how to scale the web scraping process by first retrieving the first company/row of the table, all companies on the website’s first page, and finally, all 5391 companies from multiple pages. Then, we will use `matplotlib` to visualise the most important information from the scraped dataset.
+We will learn how to scale the web scraping process by first retrieving the first company/row of the table, all companies on the website’s first page, and finally, all 5411 companies from multiple pages. Then, we will use `matplotlib` to visualise the most important information from the scraped dataset.
+
+We will learn how to scale the web scraping process by first retrieving the first company/row of the table, then all companies on the website’s first page, and finally, all 5411 companies from multiple pages. Once the scraping process is complete, we will preprocess the dataset and transform it into a more readable format before using `matplotlib` to visualise the most important information.
 
 <br>
 
@@ -54,10 +68,10 @@ Everything written in HTML is either an element or contained in an element (or b
 ```
 Note that the code is formatted such that the indentation level of text increases once for each level of nesting.
 
-Every HTML file must have one grand/root element called \<html>. This element contains all other elements of the document. It is necessary that <html> always has two child elements:
+Every HTML file must have one grand/root element called \<html>. This element contains all other elements of the document. It is necessary that `<html>` always has two child elements:
   
 - The \<head> element: a container for metadata, i.e. information about an HTML page that is not displayed on the web page itself.
-- The \<body> element: it represents the main content of an HTML document displayed on the browser.
+- The \<body> element: represents the main content of an HTML document displayed on the browser.
   
 ```
 <html>
