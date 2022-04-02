@@ -12,6 +12,7 @@
   * [Web Scraping Workflow](#web-scraping-workflow)
   * [Ethics of Scraping](#ethics-of-scraping)
   * [References](#references)
+  * [Feedback](#feedback)
 <!--te-->
 
 <br>
@@ -20,7 +21,7 @@
 
 This tutorial aims to show how to use the Python programming language to web scrape a website. Specifically, we will use the `requests` and `Beautiful Soup` libraries to scrape and parse data from [companiesmarketcap.com](https://companiesmarketcap.com/) and retrieve the “*Largest Companies by Market Cap*”.
 
-We will learn how to scale the web scraping process by first retrieving the first company/row of the table, then all companies on the website’s first page, and finally, all 5411 companies from multiple pages. Once the scraping process is complete, we will preprocess the dataset and transform it into a more readable format before using `matplotlib` to visualise the most important information.
+We will learn how to scale the web scraping process by first retrieving the first company/row of the table, then all companies on the website’s first page, and finally, all 6024 companies from multiple pages. Once the scraping process is complete, we will preprocess the dataset and transform it into a more readable format before using `matplotlib` to visualise the most important information.
 
 <br>
 
@@ -122,3 +123,17 @@ If you would like to know more, I suggest reading James Densmore’s article on 
 ## References
   
 The complete list of reference for this tutorial is included at the end of the notebook.
+
+<br>
+
+## Feedback
+
+If you have any feedback or ideas to improve this project, feel free to contact me via:
+
+<a href="https://twitter.com/korfanakis">
+  <img align="left" alt="Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
+</a>
+
+<a href="https://uk.linkedin.com/in/korfanakis">
+  <img align="left" alt="LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
+</a>
